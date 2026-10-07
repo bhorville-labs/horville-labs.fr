@@ -1,0 +1,22 @@
+# Roadmap horville-labs.fr
+
+## En cours / Prochains
+
+- **Parental Control** : fonctionnalités de contrôle parental (développement actif)
+- **Network Inspector** : outils d'analyse réseau (développement actif)
+- **Lab Notes** : publication d'articles de recherche et d'expérimentation
+- **Nouveaux projets** : ajout de sections Projets et Research & Experiments
+
+## Futur
+
+- Domaine onpremsoftware.com : publication et configuration DNS/HTTPS
+- Déploiement GitHub Pages sur la branche principale
+- Refactoring du code HTML/CSS/JS pour meilleure maintenabilité
+- Amélioration de l'interface mobile et de l'accessibilité
+
+## Idées / Backlog
+
+- Système de commentaires sur les Lab Notes
+- Thème clair/sombre
+- Intégration d'un blog ou d'une newsletter
+- Outils d'automatisation locale
