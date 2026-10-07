@@ -1,6 +1,6 @@
 # horville-labs.fr
 
-Laboratoire de développement de Bernard Horville — projets, expérimentations et logiciels.
+Laboratoire de développement de — projets, expérimentations et logiciels.
 
 Site statique (HTML5 / CSS / JavaScript vanilla), sans framework ni backend,
 sans dépendance externe. Aucune étape de build.

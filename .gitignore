@@ -1,0 +1,9 @@
+# Ignore support/text files
+prompt.txt
+refacto.txt
+
+# Ignore AGENTS.md (configuration doc, not web content)
+AGENTS.md
+
+# Keep README.md visible
+!README.md
