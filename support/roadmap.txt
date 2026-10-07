@@ -19,4 +19,5 @@
 - Système de commentaires sur les Lab Notes
 - Thème clair/sombre
 - Intégration d'un blog ou d'une newsletter
+- Système de changement de langue (fr / eo)
 - Outils d'automatisation locale
