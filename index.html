@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Horville Labs — Research, experiments &amp; software</title>
+  <meta name="description" content="Horville Labs is a personal software research laboratory: prototypes and experiments around networks, local software, privacy and security.">
+  <link rel="canonical" href="https://horville-labs.fr/">
+  <meta name="theme-color" content="#0d0f11">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Horville Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Horville Labs">
+  <meta property="og:title" content="Horville Labs — Research, experiments &amp; software">
+  <meta property="og:description" content="A personal software research laboratory: prototypes and experiments around networks, local software, privacy and security.">
+  <meta property="og:url" content="https://horville-labs.fr/">
+  <meta property="og:image" content="https://horville-labs.fr/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Horville Labs — Research, experiments &amp; software.">
+  <meta property="og:locale" content="en_GB">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Horville Labs — Research, experiments &amp; software">
+  <meta name="twitter:description" content="A personal software research laboratory: prototypes and experiments around networks, local software, privacy and security.">
+  <meta name="twitter:image" content="https://horville-labs.fr/assets/og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Horville Labs",
+    "url": "https://horville-labs.fr/",
+    "description": "A personal software research laboratory: prototypes and experiments around networks, local software, privacy and security.",
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Horville Labs, back to top">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="none"/>
+          <path d="M21 17v30M43 17v30" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          <path class="brand-mark-accent" d="M21 32h22" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Horville<em>&nbsp;Labs</em></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#notes">Lab Notes</a></li>
+          <li><a href="#onprem">Lab &amp; OnPrem</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero-graphic" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <g class="hg-rings">
+          <circle cx="200" cy="200" r="176" class="hg-ring"/>
+          <circle cx="200" cy="200" r="124" class="hg-ring"/>
+          <circle cx="200" cy="200" r="72" class="hg-ring"/>
+          <path d="M200 12v20M200 368v20M12 200h20M368 200h20" class="hg-tick"/>
+        </g>
+        <g class="hg-orbit hg-orbit--a">
+          <circle cx="200" cy="24" r="5" class="hg-node"/>
+          <line x1="200" y1="200" x2="200" y2="24" class="hg-spoke"/>
+        </g>
+        <g class="hg-orbit hg-orbit--b">
+          <circle cx="324" cy="200" r="4" class="hg-node hg-node--soft"/>
+          <line x1="200" y1="200" x2="324" y2="200" class="hg-spoke hg-spoke--soft"/>
+        </g>
+        <circle cx="200" cy="200" r="5" class="hg-core"/>
+        <circle cx="200" cy="200" r="14" class="hg-halo"/>
+      </svg>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Independent software lab</p>
+        <h1 id="hero-title" class="hero-title reveal">Horville&nbsp;Labs</h1>
+        <p class="hero-subtitle reveal">Research, experiments &amp; software.</p>
+        <p class="hero-lead reveal">
+          A small personal laboratory for building and testing software ideas —
+          networks, local tools, privacy and security. No factory line:
+          prototypes, notes and experiments, one step at a time.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#research">Research axes</a>
+        </div>
+        <p class="hero-status reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          2 projects currently in development
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 2. PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index" aria-hidden="true">01</p>
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-lead">
+            Prototypes in the workshop. They are experiments first —
+            nothing here is considered finished.
+          </p>
+        </header>
+
+        <!-- To add a project: copy one <li> block below and edit title, status and description. -->
+        <ul class="project-grid">
+          <li class="reveal">
+            <article class="card project-card">
+              <p class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                In development
+              </p>
+              <h3 class="card-title">Parental Control</h3>
+              <p class="card-text">
+                A prototype exploring local, self-hosted parental control —
+                supervision and filtering that stays on your own network
+                instead of a remote service.
+              </p>
+              <p class="card-meta">Prototype · local software</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card project-card">
+              <p class="card-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                In development
+              </p>
+              <h3 class="card-title">Network Inspector</h3>
+              <p class="card-text">
+                A prototype for observing and understanding local network
+                traffic — seeing what talks to what, on machines you control.
+              </p>
+              <p class="card-meta">Prototype · networks</p>
+            </article>
+          </li>
+        </ul>
+
+        <p class="section-note reveal">
+          Further experiments will appear here as they take shape.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 3. RESEARCH & EXPERIMENTS ============ -->
+    <section class="section section--soft" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index" aria-hidden="true">02</p>
+          <h2 id="research-title">Research &amp; Experiments</h2>
+          <p class="section-lead">
+            The axes the lab keeps returning to. Each one is a direction,
+            not a product catalogue.
+          </p>
+        </header>
+
+        <ul class="axes-grid">
+          <li class="axis reveal">
+            <h3>Network technologies</h3>
+            <p>Protocols, traffic and local networks — how machines talk to each other.</p>
+          </li>
+          <li class="axis reveal">
+            <h3>Local software</h3>
+            <p>Tools that run on your own machine, with as little cloud as possible.</p>
+          </li>
+          <li class="axis reveal">
+            <h3>Privacy</h3>
+            <p>Data staying where it belongs, and what that really takes.</p>
+          </li>
+          <li class="axis reveal">
+            <h3>Security</h3>
+            <p>Safe defaults, hardening and honest threat awareness for small systems.</p>
+          </li>
+          <li class="axis reveal">
+            <h3>Infrastructure</h3>
+            <p>The quiet plumbing that keeps experiments and services running.</p>
+          </li>
+          <li class="axis reveal">
+            <h3>Automation</h3>
+            <p>Scripts and pipelines that remove the repetitive parts of the work.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 4. LAB NOTES ============ -->
+    <section class="section" id="notes" aria-labelledby="notes-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index" aria-hidden="true">03</p>
+          <h2 id="notes-title">Lab Notes</h2>
+          <p class="section-lead">
+            Short technical notes and write-ups from the lab.
+            No public notes yet — lab notes will appear here as projects
+            mature.
+          </p>
+        </header>
+
+        <ul class="notes-grid">
+          <li class="reveal">
+            <article class="card note-card">
+              <p class="badge">Coming soon</p>
+              <h3 class="card-title">Observing local traffic</h3>
+              <p class="card-text">
+                A first note on watching what moves on a local network.
+              </p>
+              <p class="card-meta">In preparation</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card note-card">
+              <p class="badge">Coming soon</p>
+              <h3 class="card-title">Designing for local-first</h3>
+              <p class="card-text">
+                Notes on keeping data on the machine it was created on.
+              </p>
+              <p class="card-meta">In preparation</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card note-card">
+              <p class="badge">Coming soon</p>
+              <h3 class="card-title">Small automations</h3>
+              <p class="card-text">
+                A few small scripts worth writing up, when the time is right.
+              </p>
+              <p class="card-meta">In preparation</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. RELATIONSHIP WITH ONPREMSOFTWARE ============ -->
+    <section class="section section--soft" id="onprem" aria-labelledby="onprem-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index" aria-hidden="true">04</p>
+          <h2 id="onprem-title">The lab &amp; OnPremSoftware</h2>
+          <p class="section-lead">
+            Two spaces, two jobs — same interest in software that runs close
+            to you.
+          </p>
+        </header>
+
+        <div class="split">
+          <div class="split-text reveal">
+            <h3>From the lab onwards</h3>
+            <p>
+              <strong>Horville Labs</strong> is the workbench: experiments,
+              prototypes, half-finished ideas and technical notes. Things here
+              are allowed to be rough, early or wrong.
+            </p>
+            <p>
+              <strong>OnPremSoftware</strong> is the space intended for
+              software projects focused on local-first and on-premise
+              software — presented there once they are ready.
+            </p>
+            <p class="split-note">
+              A project usually starts here, and may move over there when it
+              is ready.
+            </p>
+          </div>
+
+          <aside class="link-card reveal" aria-label="OnPremSoftware">
+            <p class="link-card-label">The other side</p>
+            <p class="link-card-name">OnPremSoftware</p>
+            <p class="link-card-text">
+              Software projects focused on local-first and on-premise
+              software.
+            </p>
+            <a class="link-arrow" href="https://onpremsoftware.com" rel="noopener">
+              onpremsoftware.com
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-index" aria-hidden="true">05</p>
+          <h2 id="about-title">About</h2>
+        </header>
+
+        <div class="about reveal">
+          <p>
+            Horville Labs is the personal research and experimentation space
+            of <strong>Bernard Horville</strong> — a place to try things,
+            keep notes and build software with a small footprint.
+          </p>
+          <p>
+            The lab sits alongside
+            <a href="https://onpremsoftware.com" rel="noopener">OnPremSoftware</a>
+            — software projects focused on local-first and on-premise
+            software — and
+            <a href="https://bhorville-it.fr" rel="noopener">bhorville-it.fr</a>
+            for the wider IT activity.
+          </p>
+          <a class="btn btn-ghost" href="https://bhorville-it.fr" rel="noopener">
+            bhorville-it.fr <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Horville Labs</p>
+        <p class="footer-tag">Research, experiments &amp; software.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#notes">Lab Notes</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-links">
+        <a href="https://onpremsoftware.com" rel="noopener">OnPremSoftware</a>
+        <a href="https://bhorville-it.fr" rel="noopener">bhorville-it.fr</a>
+      </div>
+
+      <p class="footer-copy">
+        <span>&copy; <span data-year>2026</span> Horville Labs</span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span>Static site · no tracking</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

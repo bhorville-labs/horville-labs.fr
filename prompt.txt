@@ -1,0 +1,129 @@
+Tu es un développeur web senior spécialisé dans les sites de laboratoires logiciels et de projets expérimentaux.
+
+Crée le site web complet du domaine horville-labs.fr.
+
+OBJECTIF
+Créer un site représentant Horville Labs comme un laboratoire personnel de recherche, expérimentation et développement logiciel.
+
+Horville Labs est associé à OnPremSoftware mais possède sa propre identité.
+
+POSITIONNEMENT
+Le site doit évoquer :
+- R&D
+- expérimentation
+- développement
+- prototypes
+- réseaux
+- systèmes
+- sécurité
+- logiciels locaux
+- nouvelles idées
+
+Le site ne doit pas donner l'impression d'une entreprise industrielle ou d'une startup avec une grosse équipe.
+
+STRUCTURE
+
+1. Hero
+
+Titre :
+"Horville Labs"
+
+Sous-titre :
+"Research, experiments & software."
+
+Présenter brièvement le laboratoire.
+
+2. Projects
+
+Créer une grille de projets.
+
+Projet :
+Parental Control
+Statut : In development
+
+Projet :
+Network Inspector
+Statut : In development
+
+Prévoir une structure permettant d'ajouter facilement d'autres projets.
+
+3. Research & Experiments
+
+Créer une section présentant différents axes :
+- Network technologies
+- Local software
+- Privacy
+- Security
+- Infrastructure
+- Automation
+
+4. Lab Notes
+
+Créer une section prévue pour de futurs articles ou notes techniques.
+
+Pour le moment afficher quelques placeholders clairement identifiés comme exemples ou "Coming soon".
+
+5. Relationship with OnPremSoftware
+
+Expliquer que Horville Labs constitue l'espace expérimental et R&D, tandis que OnPremSoftware est destiné à présenter et distribuer les logiciels aboutis.
+
+Lien :
+onpremsoftware.com
+
+6. About
+
+Lien vers :
+bhorville-it.fr
+
+DESIGN
+Créer une identité différente des deux autres sites :
+- laboratoire technologique
+- élégant
+- expérimental
+- minimaliste
+- sombre ou neutre possible
+- animations très discrètes
+- graphiques décoratifs légers possibles
+
+Éviter le style cyberpunk cliché.
+
+TECHNIQUE
+- HTML5 sémantique
+- CSS moderne
+- JavaScript vanilla
+- Aucun framework
+- Aucun backend
+- Compatible GitHub Pages
+- Responsive
+- Accessible
+- SEO de base
+- Open Graph
+- favicon
+- bonnes performances
+
+STRUCTURE
+
+/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── assets/
+│   └── ...
+├── favicon.svg
+├── README.md
+
+IMPORTANT
+Ne pas inventer de résultats de recherche, de brevets, de clients, de produits commercialisés ou de technologies propriétaires.
+
+Les projets peuvent être présentés comme prototypes ou projets en développement.
+
+Le site doit être conçu pour pouvoir accueillir plus tard :
+- pages projet
+- articles techniques
+- démonstrations
+- documentation
+- téléchargements
+
+Produis directement tous les fichiers nécessaires.
