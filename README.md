@@ -28,6 +28,10 @@ sans dépendance externe. Aucune étape de build.
 │   ├── og-image.png    # Image Open Graph (1200×630)
 │   └── apple-touch-icon.png
 ├── favicon.svg
+├── 404.html            # Page d'erreur servie par GitHub Pages
+├── robots.txt          # Règles crawl + URL du sitemap
+├── sitemap.xml         # Sitemap (1 URL)
+├── .gitattributes      # LF forcé pour les scripts shell
 ├── CNAME               # Domaine personnalisé GitHub Pages (horville-labs.fr)
 ├── support/            # Fichiers hors-ligne : roadmap.txt, hooks/, briefs (AGENTS.md gitignoré)
 └── README.md
