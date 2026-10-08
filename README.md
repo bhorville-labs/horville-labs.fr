@@ -29,7 +29,7 @@ sans dépendance externe. Aucune étape de build.
 │   └── apple-touch-icon.png
 ├── favicon.svg
 ├── CNAME               # Domaine personnalisé GitHub Pages (horville-labs.fr)
-├── support/            # Fichiers hors ligne (gitignorés) : AGENTS.md, roadmap.txt, briefs
+├── support/            # Fichiers hors-ligne : roadmap.txt, hooks/, briefs (AGENTS.md gitignoré)
 └── README.md
 ```
 
@@ -60,6 +60,21 @@ retirer le badge « Coming soon » uniquement quand l'article existe.
 **Changer un lien externe** : mettre à jour `js/config.js` (source de
 vérité) puis le `href` de repli dans `index.html` (requis sans JS et pour
 le SEO). Voir `support/AGENTS.md`, section « Gestion de configuration ».
+
+## Verrouillage local (hook git)
+
+Un hook `pre-commit` versionné dans `support/hooks/pre-commit` refuse les
+commits qui contiendraient les fichiers hors-ligne (`prompt.txt`,
+`refacto.txt`, `AGENTS.md`) ou un motif de secret évident.
+
+Installation (après un clone) :
+
+```
+tr -d '\r' < support/hooks/pre-commit > .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+Passage ponctuel : `git commit --no-verify`.
 
 ## Déploiement (prévu)
 

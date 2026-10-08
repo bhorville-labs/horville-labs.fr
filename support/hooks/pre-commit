@@ -1,0 +1,41 @@
+#!/bin/sh
+# Horville Labs — pre-commit local (verrou).
+# Bloque : fichiers hors-ligne (prompt/refacto/AGENTS), secrets évidents.
+#
+# Installation :
+#   tr -d '\r' < support/hooks/pre-commit > .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+
+blocked_files='(^|/)(prompt\.txt|refacto\.txt|AGENTS\.md)$'
+secret_pattern='-----BEGIN [A-Z ]*PRIVATE KEY-----|(^|[^a-zA-Z])(api[_-]?key|secret|password|passwd)[[:space:]]*[=:][[:space:]]*[^[:space:]]{8,}'
+
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$staged" ] && exit 0
+
+fail=0
+
+for f in $staged; do
+  if echo "$f" | grep -Eq "$blocked_files"; then
+    echo "  ✗ Fichier verrouillé (hors-ligne, jamais à commiter) : $f" >&2
+    fail=1
+  fi
+done
+
+for f in $staged; do
+  case "$f" in
+    *.png|*.jpg|*.ico|*.svg|*.woff*) continue ;;
+  esac
+  if git show ":$f" 2>/dev/null | grep -Eiq -e "$secret_pattern"; then
+    echo "  ✗ Motif secret détecté dans : $f" >&2
+    fail=1
+  fi
+done
+
+if [ "$fail" -ne 0 ]; then
+  echo "" >&2
+  echo "Commit refusé par le verrou pre-commit." >&2
+  echo "Pour passer une fois : git commit --no-verify" >&2
+  exit 1
+fi
+
+exit 0
