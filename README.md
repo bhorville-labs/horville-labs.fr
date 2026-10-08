@@ -22,13 +22,14 @@ sans dépendance externe. Aucune étape de build.
 ├── css/
 │   └── style.css       # Design « laboratoire » sombre, responsive
 ├── js/
+│   ├── config.js       # Configuration centralisée (liens UI, origine)
 │   └── main.js         # Navigation mobile, révélations au scroll, section active
 ├── assets/
 │   ├── og-image.png    # Image Open Graph (1200×630)
 │   └── apple-touch-icon.png
 ├── favicon.svg
-├── prompt.txt          # Brief initial de création du site
-├── refacto.txt         # Brief de refacto (contrôles et contraintes)
+├── CNAME               # Domaine personnalisé GitHub Pages (horville-labs.fr)
+├── support/            # Fichiers hors ligne (gitignorés) : AGENTS.md, roadmap.txt, briefs
 └── README.md
 ```
 
@@ -56,12 +57,17 @@ retirer le badge « Coming soon » uniquement quand l'article existe.
 **Ajouter une page projet / un article** : créer un fichier HTML à la racine
 (par ex. `projects/network-inspector.html`) et y faire depuis le listing.
 
+**Changer un lien externe** : mettre à jour `js/config.js` (source de
+vérité) puis le `href` de repli dans `index.html` (requis sans JS et pour
+le SEO). Voir `support/AGENTS.md`, section « Gestion de configuration ».
+
 ## Déploiement (prévu)
 
 Hébergement prévu : **GitHub Pages** (push sur la branche par défaut →
 racine du dépôt). Aucun backend nécessaire actuellement.
-Le domaine personnalisé et sa configuration DNS / HTTPS seront traités
-séparément — le site n'est pas encore déployé.
+Le fichier `CNAME` (`horville-labs.fr`) est déjà en place pour le domaine
+personnalisé ; la publication effective et la configuration DNS / HTTPS
+restent à confirmer — le site n'est pas encore déployé.
 
 ## Références
 

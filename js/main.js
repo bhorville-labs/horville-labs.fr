@@ -10,6 +10,18 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  /* ----- Centralized configuration ----- */
+  var config = window.SITE_CONFIG;
+
+  if (config && config.links) {
+    doc.querySelectorAll("[data-site-link]").forEach(function (el) {
+      var key = el.getAttribute("data-site-link");
+      if (config.links[key]) {
+        el.setAttribute("href", config.links[key]);
+      }
+    });
+  }
+
   /* ----- Header state on scroll ----- */
   var header = doc.querySelector("[data-header]");
 
