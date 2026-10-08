@@ -65,6 +65,12 @@ retirer le badge « Coming soon » uniquement quand l'article existe.
 vérité) puis le `href` de repli dans `index.html` (requis sans JS et pour
 le SEO). Voir `support/AGENTS.md`, section « Gestion de configuration ».
 
+**Déployer (bump de version)** : incrémenter `version` dans `js/config.js`
+**et** le repli `<span data-version>` du footer dans `index.html`
+(format `vAAAA.MM.JJ-n`, `n` = numéro du déploiement du jour), puis
+committer / pousser. Le marqueur en footer permet d'identifier la version
+en production et de repérer un retour arrière.
+
 ## Verrouillage local (hook git)
 
 Un hook `pre-commit` versionné dans `support/hooks/pre-commit` refuse les

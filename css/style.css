@@ -899,6 +899,9 @@ ul {
 .footer-sep {
   color: var(--accent);
 }
+.footer-version {
+  color: var(--muted);
+}
 
 /* ---------- Scroll reveal (JS only) ---------- */
 
